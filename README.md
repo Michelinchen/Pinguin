@@ -1,0 +1,2 @@
+Nutritrack
+Im Rahmen des Moduls Webtechnologie entwickeln wir NutriTrack – eine browserbasierte Webanwendung zur Erfassung und Auswertung der täglichen Kalorienzufuhr. Nutzer können Mahlzeiten und Lebensmittel suchen, ihren Gerichten zuordnen und erhalten eine automatische Berechnung der aufgenommenen Kalorien sowie der Makronährstoffe Kohlenhydrate, Proteine und Fette. Häufig konsumierte Gerichte lassen sich als Favoriten speichern, um die tägliche Erfassung zu beschleunigen.
