@@ -1,13 +1,13 @@
-package htw.webtech.Pinguin;
+package htw.webtech.NutriTrack;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PinguinApplication {
+public class NutriTrackApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PinguinApplication.class, args);
+		SpringApplication.run(NutriTrackApplication.class, args);
 	}
 
 }

@@ -1,10 +1,10 @@
-package htw.webtech.Pinguin;
+package htw.webtech.NutriTrack;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PinguinApplicationTests {
+class NutriTrackApplicationTests {
 
 	@Test
 	void contextLoads() {
