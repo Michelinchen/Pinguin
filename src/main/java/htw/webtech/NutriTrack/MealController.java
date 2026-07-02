@@ -15,23 +15,23 @@ public class MealController {
     }
 
     @GetMapping("/meals")
-    public List<MealEntry> getAllMeals(){
-        return service.getAllMeals();
+    public List<MealEntry> getAllMeals(@RequestParam("Owner") String owner) {
+        return service.getAllMeals(owner);
     }
 
     @PostMapping("/meals")
-    public MealEntry createMeal(@RequestBody MealEntry meal){
-        return service.save(meal);
+    public MealEntry createMeal(@RequestBody MealEntry meal, @RequestParam("Owner") String owner){
+        return service.save(meal, owner);
     }
 
     @DeleteMapping("/meals/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteMeal(@PathVariable Long id){
-        service.delete(id);
+    public void deleteMeal(@PathVariable Long id, @RequestParam("Owner") String owner){
+        service.delete(id, owner);
     }
 
     @PutMapping("/meals/{id}")
-    public MealEntry updateMeal(@PathVariable Long id, @RequestBody MealEntry meal){
-        return service.update(id, meal);
+    public MealEntry updateMeal(@PathVariable Long id, @RequestBody MealEntry meal, @RequestParam("Owner") String owner){
+        return service.update(id, meal, owner);
     }
 }

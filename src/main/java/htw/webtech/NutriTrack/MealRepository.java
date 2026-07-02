@@ -2,4 +2,9 @@ package htw.webtech.NutriTrack;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface MealRepository extends JpaRepository<MealEntry, Long> {}
+import java.util.List;
+
+public interface MealRepository extends JpaRepository<MealEntry, Long> {
+    List<MealEntry> findByOwner(String owner);
+
+}

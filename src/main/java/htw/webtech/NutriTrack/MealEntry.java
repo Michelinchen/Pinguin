@@ -5,13 +5,16 @@ import jakarta.persistence.*;
 @Entity
 public class MealEntry {
 
+    private String name;
+    private boolean favorite;
+    private String owner;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
+
     @Embedded
     private Macronutrient macro;
-    private boolean favorite;
 
     public MealEntry() {}
 
@@ -34,6 +37,10 @@ public class MealEntry {
         return favorite;
     }
 
+    public String getOwner() {
+        return owner;
+    }
+
     public void setId(Long id) {this.id = id;}
 
     public void setName(String name) {this.name = name;}
@@ -42,5 +49,9 @@ public class MealEntry {
 
     public void setFavorite(boolean favorite) {
         this.favorite = favorite;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
     }
 }
