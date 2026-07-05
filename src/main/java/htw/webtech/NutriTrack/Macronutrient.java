@@ -35,4 +35,8 @@ public class Macronutrient{
     public void setCountCarbs(final double countCarbs){ this.countCarbs = countCarbs; }
 
     public void setCountProteins(double countProteins) { this.countProteins = countProteins; }
+
+    public double getTotalCalories(){
+        return this.getCountFat() * 9 + this.getCountCarbs() * 4 + this.getCountProteins() * 4;
+    }
 }
